@@ -3,32 +3,31 @@ image:https://spring.io/badges/spring-data-jpa/snapshot.svg[Spring Data JPA,link
 
 = Spring Data JPA image:https://jenkins.spring.io/buildStatus/icon?job=spring-data-jpa%2Fmain&subject=Build[link=https://jenkins.spring.io/view/SpringData/job/spring-data-jpa/] https://gitter.im/spring-projects/spring-data[image:https://badges.gitter.im/spring-projects/spring-data.svg[Gitter]]
 
-Spring Data JPA, part of the larger https://projects.spring.io/spring-data[Spring Data] family, makes it easy to easily implement JPA based repositories.
-This module deals with enhanced support for JPA based data access layers.
-It makes it easier to build Spring-powered applications that use data access technologies.
 
-Implementing a data access layer of an application has been cumbersome for quite a while.
-Too much boilerplate code has to be written to execute simple queries as well as perform pagination, and auditing.
-Spring Data JPA aims to significantly improve the implementation of data access layers by reducing the effort to the amount that’s actually needed.
-As a developer you write your repository interfaces, including custom finder methods, and Spring will provide the implementation automatically.
+O Spring Data JPA, parte da família maior do Spring Data , torna mais fácil implementar repositórios baseados em JPA. Este módulo trata do suporte aprimorado para camadas de acesso a dados baseadas em JPA. Torna mais fácil construir aplicativos com tecnologia Spring que usam tecnologias de acesso a dados.
 
-== Features
+Implementar uma camada de acesso a dados de um aplicativo tem sido complicado por um bom tempo. Muito código clichê deve ser escrito para executar consultas simples, bem como realizar paginação e auditoria. O Spring Data JPA visa melhorar significativamente a implementação de camadas de acesso a dados, reduzindo o esforço para a quantidade que é realmente necessária. Como desenvolvedor, você escreve suas interfaces de repositório, incluindo métodos de localização customizados, e o Spring fornecerá a implementação automaticamente.
 
-* Implementation of CRUD methods for JPA Entities
-* Dynamic query generation from query method names
-* Transparent triggering of JPA NamedQueries by query methods
-* Implementation domain base classes providing basic properties
-* Support for transparent auditing (created, last changed)
-* Possibility to integrate custom repository code
-* Easy Spring integration with custom namespace
+Recursos
+Implementação de métodos CRUD para entidades JPA
 
-== Code of Conduct
+Geração de consulta dinâmica a partir de nomes de métodos de consulta
 
-This project is governed by the https://github.com/spring-projects/.github/blob/e3cc2ff230d8f1dca06535aa6b5a4a23815861d4/CODE_OF_CONDUCT.md[Spring Code of Conduct]. By participating, you are expected to uphold this code of conduct. Please report unacceptable behavior to spring-code-of-conduct@pivotal.io.
+Acionamento transparente de NamedQueries JPA por métodos de consulta
 
-== Getting Started
+Classes de base de domínio de implementação que fornecem propriedades básicas
 
-Here is a quick teaser of an application using Spring Data Repositories in Java:
+Suporte para auditoria transparente (criado, última alteração)
+
+Possibilidade de integrar código de repositório customizado
+
+Fácil integração Spring com namespace personalizado
+
+Código de Conduta
+Este projeto é regido pelo Código de Conduta da Primavera . Ao participar, espera-se que você cumpra este código de conduta. Informe o comportamento inaceitável para spring-code-of-conduct@pivotal.io .
+
+Começando
+Aqui está um teaser rápido de um aplicativo usando Spring Data Repositories em Java:
 
 [source,java]
 ----
@@ -125,66 +124,55 @@ If you'd rather like the latest snapshots of the upcoming major version, use our
 </repository>
 ----
 
-== Getting Help
+Conseguindo ajuda
+Está tendo problemas com o Spring Data? Adoraríamos ajudar!
 
-Having trouble with Spring Data? We’d love to help!
+Verifique a documentação de referência e Javadocs .
 
-* Check the
-https://docs.spring.io/spring-data/jpa/docs/current/reference/html/[reference documentation], and https://docs.spring.io/spring-data/jpa/docs/current/api/[Javadocs].
-* Learn the Spring basics – Spring Data builds on Spring Framework, check the https://spring.io[spring.io] web-site for a wealth of reference documentation.
-If you are just starting out with Spring, try one of the https://spring.io/guides[guides].
-* If you are upgrading, check out the https://docs.spring.io/spring-data/jpa/docs/current/changelog.txt[changelog] for "`new and noteworthy`" features.
-* Ask a question - we monitor https://stackoverflow.com[stackoverflow.com] for questions tagged with https://stackoverflow.com/tags/spring-data[`spring-data-jpa`].
-You can also chat with the community on https://gitter.im/spring-projects/spring-data[Gitter].
-* Report bugs with Spring Data JPA in the https://github.com/spring-projects/spring-data-jpa/issues[GitHub issue tracker].
+Aprenda os fundamentos do Spring - Spring Data baseia-se no Spring Framework, verifique o site spring.io para obter uma grande quantidade de documentação de referência. Se você está apenas começando com o Spring, experimente um dos guias .
 
-== Reporting Issues
+Se você estiver atualizando, verifique o changelog para recursos “novos e dignos de nota”.
 
-Spring Data uses GitHub as issue tracking system to record bugs and feature requests. If you want to raise an issue, please follow the recommendations below:
+Faça uma pergunta - monitoramos stackoverflow.com em busca de perguntas marcadas com spring-data-jpa. Você também pode bater um papo com a comunidade no Gitter .
 
-* Before you log a bug, please search the
-https://github.com/spring-projects/spring-data-jpa/issues[issue tracker] to see if someone has already reported the problem.
-* If the issue doesn’t exist already, https://github.com/spring-projects/spring-data-jpa/issues[create a new issue].
-* Please provide as much information as possible with the issue report, we like to know the version of Spring Data that you are using and JVM version, complete stack traces and any relevant configuration information.
-* If you need to paste code, or include a stack trace format it as code using triple backtick.
-* If possible try to create a test-case or project that replicates the issue. Attach a link to your code or a compressed file containing your code. Use an in-memory datatabase if possible or set the database up using https://github.com/testcontainers[Testcontainers].
+Relate bugs com Spring Data JPA no rastreador de problemas do GitHub .
 
-== Building from Source
+Problemas de relatório
+Spring Data usa GitHub como sistema de rastreamento de problemas para registrar bugs e solicitações de recursos. Se você quiser levantar um problema, siga as recomendações abaixo:
 
-You don’t need to build from source to use Spring Data (binaries in https://repo.spring.io[repo.spring.io]), but if you want to try out the latest and greatest, Spring Data can be easily built with the https://github.com/takari/maven-wrapper[maven wrapper].
-You also need JDK 1.8.
+Antes de registrar um bug, pesquise o rastreador de problemas para ver se alguém já relatou o problema.
 
-[source,bash]
-----
- $ ./mvnw clean install
-----
+Se o problema ainda não existir, crie um novo .
 
-If you want to build with the regular `mvn` command, you will need https://maven.apache.org/run-maven/index.html[Maven v3.5.0 or above].
+Forneça o máximo de informações possível com o relatório de problema, nós gostamos de saber a versão do Spring Data que você está usando e a versão JVM, rastreamentos de pilha completos e quaisquer informações de configuração relevantes.
 
-_Also see link:CONTRIBUTING.adoc[CONTRIBUTING.adoc] if you wish to submit pull requests, and in particular please sign the https://cla.pivotal.io/sign/spring[Contributor’s Agreement] before your first non-trivial change._
+Se você precisar colar o código ou incluir um rastreamento de pilha, formate-o como código usando backtick triplo.
 
-=== Building reference documentation
+Se possível, tente criar um caso de teste ou projeto que replique o problema. Anexe um link para seu código ou um arquivo compactado contendo seu código. Use um banco de dados na memória se possível ou configure o banco de dados usando Testcontainers .
 
-Building the documentation builds also the project without running tests.
+Construindo a partir da Fonte
+Você não precisa compilar a partir do código-fonte para usar Spring Data (binários em repo.spring.io ), mas se quiser experimentar o que há de melhor e mais recente, Spring Data pode ser facilmente compilado com o invólucro maven . Você também precisa do JDK 1.8.
 
-[source,bash]
-----
- $ ./mvnw clean install -Pdistribute
-----
+ $ ./mvnw instalação limpa
+Se quiser construir com o mvncomando regular , você precisará do Maven v3.5.0 ou superior .
 
-The generated documentation is available from `target/site/reference/html/index.html`.
+Consulte também CONTRIBUTING.adoc se desejar enviar solicitações pull e, em particular, assine o Acordo de Contribuidor antes de sua primeira alteração não trivial.
 
-== Guides
+Documentação de referência de construção
+Construir a documentação também constrói o projeto sem a execução de testes.
 
-The https://spring.io/[spring.io] site contains several guides that show how to use Spring Data step-by-step:
+ $ ./mvnw instalação limpa -Pdistribute
+A documentação gerada está disponível em target/site/reference/html/index.html.
 
-* https://spring.io/guides/gs/accessing-data-jpa/[Accessing Data with JPA]: Learn how to work with JPA data persistence using Spring Data JPA.
-* https://spring.io/guides/gs/accessing-jpa-data-rest/[Accessing JPA Data with REST] is a guide to creating a REST web service exposing data stored with JPA through repositories.
+Guias
+O site spring.io contém vários guias que mostram como usar o Spring Data passo a passo:
 
-== Examples
+Acessando dados com JPA : Aprenda como trabalhar com persistência de dados JPA usando Spring Data JPA.
 
-* https://github.com/spring-projects/spring-data-examples/[Spring Data Examples] contains example projects that explain specific features in more detail.
+Acessar dados JPA com REST é um guia para criar um serviço da web REST expondo dados armazenados com JPA por meio de repositórios.
 
-== License
+Exemplos
+Os exemplos de dados do Spring contém projetos de exemplo que explicam recursos específicos com mais detalhes.
 
-Spring Data JPA is Open Source software released under the https://www.apache.org/licenses/LICENSE-2.0.html[Apache 2.0 license].
+Licença
+Spring Data JPA é um software de código aberto lançado sob a licença Apache 2.0 .
